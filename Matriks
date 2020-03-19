@@ -7,6 +7,9 @@ int main()
 	menu:
 	system("cls");
 	int pilihan;
+	cout<<"2019230150-Ridwan Romly\n";
+	cout<<"TIF D Pagi\n";
+	cout<<"Praktikum Struktur Data\n\n";
 	cout<<"MATRIKS\n";
 	cout<<"--------\n";
 	cout<<"1. Penjumlahan\n";
@@ -64,7 +67,7 @@ int main()
 			{
 				for (j2=0; j2<k2; j2++)
 				{
-					cin>>matr12[i][j];
+					cin>>matr12[i2][j2];
 				}
 			}
 			cout<<"Masukan nilai matriks ke dua : \n";
@@ -72,7 +75,7 @@ int main()
 			{
 				for (j2=0; j2<k2; j2++)
 				{
-					cin>>matr22[i][j];
+					cin>>matr22[i2][j2];
 				}
 			}
 			cout<<"Hasil matriksnya adalah \n";
@@ -80,8 +83,8 @@ int main()
 			{
 				for (j2=0; j2<k2; j2++)
 				{
-					hasil2[i][j] = matr12[i][j] - matr22[i][j];
-					cout<<hasil2[i][j]<<"\t";
+					hasil2[i2][j2] = matr12[i2][j2] - matr22[i2][j2];
+					cout<<hasil2[i2][j2]<<"\t";
 				}
 				cout<<endl;
 			}
@@ -91,7 +94,7 @@ int main()
 		case 3:
 			system("cls");
 			cout<<"Terima Kasih :)\n\n";
-			cout<<"-Created by 2019230150-Ridwan Romly";
+			cout<<"-Created by 2019230150-Ridwan Romly\nUniversitas Darma Persada";
 			stop:
 				getch();
 				
