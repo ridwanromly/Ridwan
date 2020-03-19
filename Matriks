@@ -1,0 +1,99 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	menu:
+	system("cls");
+	int pilihan;
+	cout<<"MATRIKS\n";
+	cout<<"--------\n";
+	cout<<"1. Penjumlahan\n";
+	cout<<"2. Pengurangan\n";
+	cout<<"3. Exit\n";
+	cout<<"Masukan Pilihan : ";cin>>pilihan;
+	switch(pilihan)
+	{
+		case 1:
+			system("cls");
+			char ulang1;
+			int i, j, b, k, matr1[10][10],matr2[10][10],hasil[10][10];
+			cout<<"PENJUMLAHAN MATRIKS\n\n";
+			cout<<"Masukan jumlah baris : ";cin>>b;
+			cout<<"Masukan jumlah kolom : ";cin>>k;
+			cout<<"Masukan nilai matriks pertama : \n";
+			for (i=0; i<b; i++)
+			{
+				for (j=0; j<k; j++)
+				{
+					cin>>matr1[i][j];
+				}
+			}
+			cout<<"Masukan nilai matriks ke dua : \n";
+			for (i=0; i<b; i++)
+			{
+				for (j=0; j<k; j++)
+				{
+					cin>>matr2[i][j];
+				}
+			}
+			cout<<"Hasil matriksnya adalah \n";
+			for (i=0; i<b; i++)
+			{
+				for (j=0; j<k; j++)
+				{
+					hasil[i][j] = matr1[i][j] + matr2[i][j];
+					cout<<hasil[i][j]<<"\t";
+				}
+				cout<<endl;
+			}
+			cout<<"\nTekan apa saja untuk kembali...";
+			getch();
+			goto menu;
+			
+		case 2:
+			system("cls");
+			int ulang2;
+			int i2, j2, b2, k2, matr12[10][10],matr22[10][10],hasil2[10][10];
+			cout<<"PENGURANGAN MATRIKS\n\n";
+			cout<<"Masukan jumlah baris : ";cin>>b2;
+			cout<<"Masukan jumlah kolom : ";cin>>k2;
+			cout<<"Masukan nilai matriks pertama : \n";
+			for (i2=0; i2<b2; i2++)
+			{
+				for (j2=0; j2<k2; j2++)
+				{
+					cin>>matr12[i][j];
+				}
+			}
+			cout<<"Masukan nilai matriks ke dua : \n";
+			for (i2=0; i2<b2; i2++)
+			{
+				for (j2=0; j2<k2; j2++)
+				{
+					cin>>matr22[i][j];
+				}
+			}
+			cout<<"Hasil matriksnya adalah \n";
+			for (i2=0; i2<b2; i2++)
+			{
+				for (j2=0; j2<k2; j2++)
+				{
+					hasil2[i][j] = matr12[i][j] - matr22[i][j];
+					cout<<hasil2[i][j]<<"\t";
+				}
+				cout<<endl;
+			}
+			cout<<"\nTekan apa saja untuk kembali...";
+			getch();
+			goto menu;
+		case 3:
+			system("cls");
+			cout<<"Terima Kasih :)\n\n";
+			cout<<"-Created by 2019230150-Ridwan Romly";
+			stop:
+				getch();
+				
+	}
+}
